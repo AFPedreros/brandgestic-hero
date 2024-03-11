@@ -1,10 +1,9 @@
-import "@/components/ui/button";
-import { Button } from "./components/ui/button";
+import { Header } from "./components/header";
 
 function App() {
   return (
-    <div className="relative bg-red-200 flex h-screen w-full">
-      <Button>Click me</Button>
+    <div className="relative bg-background flex h-screen w-full">
+      <Header />
     </div>
   );
 }
