@@ -1,7 +1,7 @@
 import { NavItem as NavItemType } from "@/types/index";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu } from "@/components/menu";
+import { Menu } from "@/components/svgs/menu";
 
 type MobileNavbarProps = {
   navItems?: NavItemType[];

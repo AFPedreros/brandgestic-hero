@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Logo } from "@/components/logo";
+import { Logo } from "@/components/svgs/logo";
 import { NavItem } from "@/components/nav-item";
 import { NavItem as NavItemType } from "@/types/index";
 import { MobileNavbar } from "@/components/mobile-navbar";

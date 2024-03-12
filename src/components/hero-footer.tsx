@@ -1,6 +1,6 @@
-import { WallStreetJournalLogo } from "@/components/wall-street-journal-logo";
-import { TechCrunchLogo } from "@/components/tech-crunch-logo";
-import { ForbesLogo } from "@/components/forbes-logo";
+import { WallStreetJournalLogo } from "@/components/svgs/wall-street-journal-logo";
+import { TechCrunchLogo } from "@/components/svgs/tech-crunch-logo";
+import { ForbesLogo } from "@/components/svgs/forbes-logo";
 
 export function HeroFooter() {
   return (
