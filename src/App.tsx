@@ -1,9 +1,12 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { HeroImage } from "@/components/hero-image";
 
 function App() {
   return (
-    <div className="relative bg-background flex-col flex h-screen w-full">
+    <div className="relative flex-col flex h-screen w-full">
+      <HeroImage />
+
       <Header />
 
       <Hero />

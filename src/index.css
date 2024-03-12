@@ -16,6 +16,7 @@ body {
 
 .title-accent {
   color: red;
+  font-weight: bold;
 }
 
 @layer base {
