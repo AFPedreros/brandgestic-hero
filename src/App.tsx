@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { HeroImage } from "@/components/hero-image";
+import { HeroFooter } from "./components/hero-footer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
 
       <Hero />
 
-      <div className="h-28 w-full bg-[#F6FCD5]"></div>
+      <HeroFooter />
     </div>
   );
 }
