@@ -2,9 +2,9 @@ import { HeroCTAButton } from "@/components/hero-cta-button";
 
 export function Hero() {
   return (
-    <div className="flex-1 grid grid-cols-2 w-full px-12">
-      <div className="col-span-1 pr-12 flex flex-col gap-12 items-start justify-center">
-        <h1 className="text-6xl text-wrap">
+    <div className="animate-fade-right grid w-full flex-1 grid-cols-2 px-12">
+      <div className="col-span-1 flex flex-col items-start justify-center gap-12 pr-12">
+        <h1 className="text-wrap text-6xl">
           No run-around, <span className="title-accent">just</span> affordable
           life insurance
         </h1>

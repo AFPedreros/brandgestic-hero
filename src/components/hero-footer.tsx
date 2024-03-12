@@ -12,7 +12,7 @@ export function HeroFooter() {
 
         <div className="relative col-span-1">
           <div
-            className="flex h-full w-full items-center justify-center bg-secondary"
+            className="flex h-full w-full -translate-x-[1px] items-center justify-center bg-secondary"
             style={{ clipPath: "polygon(0 0, 0% 100%, 60px 100%)" }}
           />
           <div className="absolute left-0 top-1/2 h-1 w-full -translate-y-1/2 bg-secondary" />
