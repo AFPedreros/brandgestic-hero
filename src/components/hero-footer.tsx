@@ -4,20 +4,20 @@ import { ForbesLogo } from "@/components/forbes-logo";
 
 export function HeroFooter() {
   return (
-    <div className="flex flex-col w-full bg-[#F6FCD5]">
-      <div className="grid grid-cols-3 h-14 w-1/2">
-        <div className="col-span-1 h-full justify-center flex items-center bg-[#D2ABE4]">
+    <div className="flex w-full flex-col bg-accent">
+      <div className="grid h-14 w-1/2 grid-cols-3">
+        <div className="col-span-1 flex h-full items-center justify-center bg-secondary">
           <p className="font-bold">As seen on!</p>
         </div>
       </div>
-      <div className="grid grid-cols-3 h-14 w-1/2">
-        <div className="col-span-1 h-full justify-center flex items-center">
+      <div className="grid h-14 w-1/2 grid-cols-3">
+        <div className="col-span-1 flex h-full items-center justify-center">
           <TechCrunchLogo className="h-4" />
         </div>
-        <div className="col-span-1 h-full justify-center flex items-center">
+        <div className="col-span-1 flex h-full items-center justify-center">
           <ForbesLogo className="h-4" />
         </div>
-        <div className="col-span-1 h-full justify-center flex items-center">
+        <div className="col-span-1 flex h-full items-center justify-center">
           <WallStreetJournalLogo className="h-4" />
         </div>
       </div>

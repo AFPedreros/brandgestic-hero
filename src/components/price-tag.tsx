@@ -1,24 +1,24 @@
 export function PriceTag() {
   return (
     <div
-      className="w-fit relative bg-white flex"
+      className="relative flex w-fit bg-foreground"
       style={{
         clipPath:
           "polygon(12px 0%, calc(100% - 40px) 0%, 100% 40px, 100% 100%, calc(100% - 12px) 100%, 12px 100%, 0px 100%, 0px 0px)",
       }}
     >
       <div
-        className="rotate-180 text-center font-black p-2 uppercase text-[12px] bg-[#F6FCD5] text-black"
+        className="rotate-180 bg-accent p-2 text-center text-[12px] font-black uppercase text-primary-foreground"
         style={{ writingMode: "vertical-rl" }}
       >
         Covered
       </div>
-      <div className="flex relative py-6 px-8 flex-col">
-        <div className="absolute text-center -translate-y-1/3 -translate-x-2/3 flex items-center justify-center rounded-full font-black top-6 left-8 size-8 text-xl bg-[#EAFF6C] text-background">
+      <div className="relative flex flex-col px-8 py-6">
+        <div className="absolute left-8 top-6 flex size-8 -translate-x-2/3 -translate-y-1/3 items-center justify-center rounded-full bg-primary text-center text-xl font-black text-background">
           $
         </div>
-        <span className="text-background z-40 font-black text-4xl">500k</span>
-        <span className="text-background font-bold">$10.99 / month</span>
+        <span className="z-40 text-4xl font-black text-background">500k</span>
+        <span className="font-bold text-background">$10.99 / month</span>
       </div>
     </div>
   );

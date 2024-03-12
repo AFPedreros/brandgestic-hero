@@ -1,17 +1,14 @@
 export function HeroImage() {
   return (
-    <div
-      className="absolute bg-[#D2ABE4] top-0 h-full right-0 w-1/2  hidden md:flex"
-      
-    >
-
-      <div className="w-full h-full z-40" style={{
-        backgroundImage: "url(/images/background-hero.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}>
-
-      </div>
+    <div className="absolute right-0 top-0 hidden h-full w-1/2 bg-secondary md:flex">
+      <div
+        className="z-40 h-full w-full"
+        style={{
+          backgroundImage: "url(/images/background-hero.png)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
     </div>
   );
 }

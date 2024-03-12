@@ -5,9 +5,9 @@ export function HeroCTAButton() {
   return (
     <Button
       size="lg"
-      className="w-fit h-14 bg-[#EAFF6C] px-6 py-2 text-black shadow-[4px_4px_0px_#D2ABE4] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:bg-[#EAFF6C] hover:shadow-none"
+      className="h-14 w-fit bg-primary px-6 py-2 text-primary-foreground shadow-[4px_4px_0px_#D2ABE4] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:bg-primary hover:shadow-none"
     >
-      <Avatar className="size-9 mr-4">
+      <Avatar className="mr-4 size-9">
         <AvatarImage src="/images/avatar.jpg" />
       </Avatar>
       Talk to an agent today!
