@@ -7,13 +7,25 @@ export function HeroFooter() {
     <div className="flex w-full flex-col bg-accent">
       <div className="grid h-16 w-1/2 grid-cols-3">
         <div className="col-span-1 flex h-full items-center justify-center bg-secondary">
-          <p className="font-bold">As seen on!</p>
+          <p className="font-bold text-accent">As seen on!</p>
         </div>
-        <div
-          className="col-span-1 flex h-full items-center justify-center bg-secondary"
-          style={{ clipPath: "polygon(0 0, 0% 100%, 60px 100%)" }}
-        />
+
+        <div className="relative col-span-1">
+          <div
+            className="flex h-full w-full items-center justify-center bg-secondary"
+            style={{ clipPath: "polygon(0 0, 0% 100%, 60px 100%)" }}
+          />
+          <div className="absolute left-0 top-1/2 h-1 w-full -translate-y-1/2 bg-secondary" />
+        </div>
+
+        <div className="relative col-span-1 flex items-end justify-center">
+          <div className="absolute left-0 top-1/2 h-1 w-1/2 -translate-y-1/2 bg-secondary" />
+
+          <div className="absolute left-1/2 top-1/2 h-[calc(50%-4px)] w-1 -translate-x-1/2 -translate-y-0.5 bg-secondary" />
+          <div className="h-0 w-0 rotate-180 border-x-8 border-b-[16px] border-x-transparent border-b-secondary" />
+        </div>
       </div>
+
       <div className="grid h-16 w-1/2 grid-cols-3">
         <div className="col-span-1 flex h-full items-center justify-center">
           <TechCrunchLogo className="h-4" />
