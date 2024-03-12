@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,15 +11,12 @@
   min-width: 0;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-
 .title-accent {
-  color: red;
+  color: #d2abe4;
   font-weight: bold;
 }
+
+
 
 @layer base {
   :root {
@@ -33,14 +32,14 @@ body {
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 281 51% 78%;
+    --secondary-foreground: 0 0% 0%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 69 100% 71%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -86,6 +85,9 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+  html {
+    font-family: Montserrat, system-ui sans-serif;
   }
   body {
     @apply bg-background text-foreground;
