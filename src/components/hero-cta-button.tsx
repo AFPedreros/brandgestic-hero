@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
-export function HeroCTAButton() {
+type HeroCTAButtonProps = {
+  cta: string;
+};
+
+export function HeroCTAButton({ cta }: HeroCTAButtonProps) {
   return (
     <Button
       size="lg"
@@ -10,7 +14,7 @@ export function HeroCTAButton() {
       <Avatar className="mr-4 size-9">
         <AvatarImage src="/images/avatar.jpg" />
       </Avatar>
-      Talk to an agent today!
+      {cta}
     </Button>
   );
 }

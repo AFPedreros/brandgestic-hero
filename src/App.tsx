@@ -4,18 +4,26 @@ import { HeroImage } from "@/components/hero-image";
 import { HeroFooter } from "@/components/hero-footer";
 import { PriceTag } from "@/components/price-tag";
 
+import { useFetchData } from "@/hooks/useFetchData";
+
 function App() {
+  const { data } = useFetchData();
+
+  console.log(data);
   return (
-    <div className="relative flex-col flex h-screen w-full">
+    <div className="relative flex h-screen w-full flex-col">
       <HeroImage />
 
-      <div className="absolute top-20 left-1/2 -translate-x-[33px] z-30">
+      <div className="absolute left-1/2 top-20 z-30 -translate-x-[33px]">
         <PriceTag />
       </div>
 
-      <Header />
+      <Header navItems={data?.nav} />
 
-      <Hero />
+      <Hero
+        title={data?.home["header-title"] || ""}
+        cta={data?.home["header-cta"] || ""}
+      />
 
       <HeroFooter />
     </div>

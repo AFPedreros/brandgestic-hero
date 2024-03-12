@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
 import { NavItem } from "@/components/nav-item";
+import { NavItem as NavItemType } from "@/types/index";
 
-export function Header() {
+type HeaderProps = {
+  navItems?: NavItemType[];
+};
+
+export function Header({ navItems }: HeaderProps) {
   return (
     <header className="z-40 flex h-20 w-full items-center justify-between px-12 text-foreground">
       <nav className="flex items-center gap-12">
@@ -10,7 +15,11 @@ export function Header() {
           <Logo className="h-8" />
         </a>
 
-        <NavItem href="#">Our offerings</NavItem>
+        {navItems?.map((item, index) => (
+          <NavItem key={index} href={item.link}>
+            {item.title}
+          </NavItem>
+        ))}
       </nav>
 
       <div className="flex items-center gap-4">
