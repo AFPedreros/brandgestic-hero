@@ -18,12 +18,9 @@ function App() {
         <PriceTag />
       </div>
 
-      <Header navItems={data?.nav} />
+      {data?.nav && <Header navItems={data?.nav} />}
 
-      <Hero
-        title={data?.home["header-title"] || ""}
-        cta={data?.home["header-cta"] || ""}
-      />
+      <Hero homeContent={data?.home} />
 
       <HeroFooter />
     </div>
