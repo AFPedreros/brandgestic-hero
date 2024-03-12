@@ -7,7 +7,7 @@ export function Header() {
     <header className="z-40 flex h-20 w-full items-center justify-between px-12 text-foreground">
       <nav className="flex items-center gap-12">
         <a href="#">
-          <Logo className="h-10" />
+          <Logo className="h-8" />
         </a>
 
         <NavItem href="#">Our offerings</NavItem>
