@@ -9,16 +9,15 @@ import { useFetchData } from "@/hooks/useFetchData";
 function App() {
   const { data } = useFetchData();
 
-  console.log(data);
   return (
     <div className="relative flex h-screen w-full flex-col">
       <HeroImage />
 
-      <div className="absolute left-1/2 top-20 z-30 -translate-x-[33px]">
+      {data?.nav && <Header navItems={data?.nav} />}
+
+      <div className="absolute left-1/2 top-20 z-30 hidden -translate-x-[33px] md:flex">
         <PriceTag />
       </div>
-
-      {data?.nav && <Header navItems={data?.nav} />}
 
       <Hero homeContent={data?.home} />
 

@@ -13,11 +13,11 @@ export function PriceTag() {
       >
         Covered
       </div>
-      <div className="relative flex flex-col px-8 py-6">
-        <div className="absolute left-8 top-6 flex size-8 -translate-x-2/3 -translate-y-1/3 items-center justify-center rounded-full bg-primary text-center text-xl font-black text-background">
+      <div className="relative flex flex-col px-4 py-3 md:px-8 md:py-6">
+        <div className="absolute left-4 top-4 flex size-7 -translate-x-2/3 -translate-y-1/3 items-center justify-center rounded-full bg-primary text-center text-lg font-black text-background md:left-8 md:top-6 md:size-8 md:text-xl">
           $
         </div>
-        <span className="z-40 text-4xl font-black text-background">500k</span>
+        <span className="z-40 text-3xl font-black text-background">500k</span>
         <span className="font-bold text-background">$10.99 / month</span>
       </div>
     </div>

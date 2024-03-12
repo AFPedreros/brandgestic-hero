@@ -5,7 +5,7 @@ import { ForbesLogo } from "@/components/forbes-logo";
 export function HeroFooter() {
   return (
     <div className="flex w-full flex-col bg-accent">
-      <div className="grid h-16 w-1/2 grid-cols-3">
+      <div className="grid h-16 w-full grid-cols-3 md:w-1/2">
         <div className="col-span-1 flex h-full items-center justify-center bg-secondary">
           <p className="font-bold text-accent">As seen on!</p>
         </div>
@@ -26,7 +26,7 @@ export function HeroFooter() {
         </div>
       </div>
 
-      <div className="grid h-16 w-1/2 grid-cols-3">
+      <div className="grid h-16 w-full grid-cols-3 p-2 md:w-1/2 md:p-0">
         <div className="col-span-1 flex h-full items-center justify-center">
           <TechCrunchLogo className="h-4" />
         </div>
