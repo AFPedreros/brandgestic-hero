@@ -9,6 +9,15 @@
   min-width: 0;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.title-accent {
+  color: red;
+}
+
 @layer base {
   :root {
     --background: 88 61% 20%;
