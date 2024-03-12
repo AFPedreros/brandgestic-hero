@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/logo";
+import { NavItem } from "@/components/nav-item";
 
 export function Header() {
   return (
-    <header className="flex z-40 h-20 w-full items-center justify-between px-12 text-foreground">
-      <div className="flex items-center gap-4">
-        <Logo className="h-10" />
+    <header className="z-40 flex h-20 w-full items-center justify-between px-12 text-foreground">
+      <nav className="flex items-center gap-12">
+        <a href="#">
+          <Logo className="h-10" />
+        </a>
 
-        <Button variant="link">Our offerings</Button>
-        <Button variant="link">Customer stories</Button>
-      </div>
+        <NavItem href="#">Our offerings</NavItem>
+      </nav>
 
       <div className="flex items-center gap-4">
         <Button size="lg" variant="ghost">
